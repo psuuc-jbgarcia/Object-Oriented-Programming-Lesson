@@ -1,23 +1,24 @@
 <?php
+class BankAccount {
+    private $balance;
 
-interface Animal {
-    public function makeSound();
-}
+    public function __construct($amount) {
+        $this->balance = $amount;
+    }
 
-class Dog implements Animal {
-    public function makeSound() {
-        echo "Woof!";
+    public function deposit($amount) {
+        if ($amount > 0) {
+            $this->balance += $amount;
+        }
+    }
+
+    public function getBalance() {
+        return $this->balance;
     }
 }
 
-class Cat implements Animal {
-    public function makeSound() {
-        echo "Meow!";
-    }
-}
-
-$pet = new Dog();
-$pet->makeSound(); 
-
+$account = new BankAccount(1000);
+$account->deposit(500);
+echo $account->getBalance(); 
 
 ?>
