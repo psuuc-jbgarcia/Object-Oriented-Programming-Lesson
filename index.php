@@ -1,17 +1,23 @@
-<?php 
-class Person {
-    public $name;
-    public function speak() {
-        echo "Hi, I'm $this->name";
+<?php
+
+interface Animal {
+    public function makeSound();
+}
+
+class Dog implements Animal {
+    public function makeSound() {
+        echo "Woof!";
     }
 }
 
-class Student extends Person {
-    public $course;
+class Cat implements Animal {
+    public function makeSound() {
+        echo "Meow!";
+    }
 }
 
-$student = new Student();
-$student->name = "Jerico";
-$student->speak();
+$pet = new Dog();
+$pet->makeSound(); 
+
 
 ?>
