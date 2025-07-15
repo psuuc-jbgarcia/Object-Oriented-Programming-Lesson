@@ -1,4 +1,10 @@
 <?php
+// File A.php
+namespace App\Models;
+class User {}
 
-echo "<h1>Sige Ahh!</h1>";
-?>  
+// File B.php
+namespace App\Controllers;
+class User {}
+
+?>
