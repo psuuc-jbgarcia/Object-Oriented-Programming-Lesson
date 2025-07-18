@@ -36,3 +36,4 @@ foreach ($methods as $method) {
     $visibility = implode(' ', Reflection::getModifierNames($method->getModifiers()));
     echo "- " . $method->getName() . " ($visibility)\n";
 }
+
