@@ -1,1 +1,1 @@
-{"version":1,"defects":{"DemoTest::testEqualityString":7,"DemoTest::testSum":7},"times":{"DemoTest::testEqualityString":0.293,"Demo::testEqualityString":0.004,"DemoTest::testSum":0.004}}
+{"version":1,"defects":{"DemoTest::testEqualityString":7,"DemoTest::testSum":7},"times":{"DemoTest::testEqualityString":0.004,"Demo::testEqualityString":0.004,"DemoTest::testSum":0}}
