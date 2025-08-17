@@ -1,0 +1,33 @@
+Answer Key
+Part 1
+1. B
+2. C
+3. C
+4. C
+5. D
+6. B
+7. B
+8. A
+9. D
+10. D
+11. D
+12. A
+13. C
+14. B
+15. C
+Part 2
+1. Mobile Operating System
+2. Meta data
+3. Relative Path
+4. NTFS
+5. BTRFS
+6. df -T
+7. I/O Management
+8. Absolute Path
+9. Server Operating System
+10. Client Operating System
+11. Network Management
+12. Low level Formatting
+13. High level Formatting
+14. Partition
+15. Directories
