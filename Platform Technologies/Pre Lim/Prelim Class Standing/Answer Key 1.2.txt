@@ -1,0 +1,34 @@
+Part I – Multiple Choice
+1.	a) /
+2.	d) Process Management and Main Memory Management
+3.	d) A path that always begins at the root directory
+4.	b) FAT32
+5.	a) Command Interpreter
+6.	b) To act as an interface between users and computer hardware
+7.	b) 1990s
+8.	b) Security Management
+9.	c) C:\
+10.	b) Signals
+11.	c) Managing I/O devices
+12.	c) Programs were manually loaded and run one at a time
+13.	c) Ext4
+14.	c) Optimized for touch interfaces and energy efficiency
+15.	d) Secondary Storage Management
+________________________________________
+Part II – Identification
+1.	Relative path
+2.	Server Operating System
+3.	metadata
+4.	Directories
+5.	Network Management
+6.	Low-level formatting
+7.	Absolute path
+8.	Btrfs 
+9.	Mobile Operating System
+10.	High-level formatting
+11.	Partition
+12.	df (or mount, lsblk — depending on accepted tools)
+13.	NTFS
+14.	I/O Device Management
+15.	Client Operating System
+
