@@ -1,0 +1,59 @@
+Answer Key
+Part I – Matching Type
+
+1 – B. whoami
+2 – G. id
+3 – O. hostname
+4 – D. uname
+5 – N. pwd
+6 – M. ifconfig
+7 – S. ip
+8 – K. netstat
+9 – L. clear
+10 – F. echo
+11 – R. who
+12 – H. tree
+13 – C. mv
+14 – A. cp
+15 – J. nano
+16 – I. grep
+17 – E. ls
+18 – P. cd
+19 – Q. touch
+20 – T. mkdir
+
+Part II – True or False
+
+21 – TRUE
+22 – TRUE
+23 – TRUE
+24 – FALSE
+25 – TRUE
+26 – TRUE
+27 – FALSE
+28 – TRUE
+29 – TRUE
+30 – TRUE
+31 – TRUE
+32 – TRUE
+33 – FALSE
+34 – TRUE
+35 – TRUE
+36 – TRUE
+37 – FALSE
+38 – FALSE
+39 – TRUE
+40 – TRUE
+
+Part III – Identification
+
+41 – Shebang or (#!/bin/bash)
+42 – # (Hash symbol)
+43 – Bash (Bourne Again Shell)
+44 – zsh (Z Shell)
+45 – $HOME
+46 – $PWD
+47 – $RANDOM
+48 – $SECONDS
+49 – $((expression))
+50 – Function
