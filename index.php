@@ -1,16 +1,17 @@
 <?php
-// class Calculator {
-//     public function __call($name, $arguments) {
-//         if ($name == "add") {
-//             return array_sum($arguments);
-//         }
-//     }
-// }
+class ParentClass {
+    public static function who() {
+        echo "Parent";
+    }
+    public static function test() {
+        static::who(); 
+    }
+}
 
-// $calc = new Calculator();
-// echo $calc -> add(1, 2, 3) . "\n";
-// echo $calc -> add(1, 2);
+class ChildClass extends ParentClass {
+    public static function who() {
+        echo "Child";
+    }
+}
 
-
-$name="ee";
-gecho $Name;
+ChildClass::test();
