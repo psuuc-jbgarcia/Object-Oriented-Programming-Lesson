@@ -7,16 +7,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Load users.json
     $users = json_decode(file_get_contents("users.json"), true);
-
+    echo $users;
     foreach ($users as $user) {
         if ($user["username"] == $username && password_verify($password, $user["password"])) {
             $_SESSION["user"] = $username;
             header("Location: dashboard.php");
             exit;
         }
-    }
+        else {
 
     echo "Invalid login. <a href='login.php'>Try again</a>";
+        }
+    }
+
 }
 ?>
 
