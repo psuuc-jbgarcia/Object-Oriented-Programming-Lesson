@@ -1,6 +1,22 @@
 [
     {
-        "username": "jerico",
-        "password": "$2y$10$URuN4lioZTGt5hK3K9ZaWenwNDqNnvnq9voJlc5HKja9qRavtUZjS"
+        "username": "newUser",
+        "password": "$2y$10$OhgJDCIxkKev0.rvvKYb4.05MbQ84CiBYnr\/bGMx0zHsjUEPn0xAi"
+    },
+    {
+        "username": "newUser",
+        "password": "$2y$10$B4sNf59yv.\/Jxly\/UcDEZuKv0M3lR6tBTywt5gfuuLR.cpUhkJy0a"
+    },
+    {
+        "username": "newUser",
+        "password": "$2y$10$zDai4Ol3BNhRgKRs6Rc0oO4bok1t.Fq5TrieJSoHPIKPyrAqDEmwa"
+    },
+    {
+        "username": "newUser",
+        "password": "$2y$10$IFviI3qzGs79rLyfSUTW1uM8BjLxoM\/FRffEUWXTFdGZw2RXIjYdu"
+    },
+    {
+        "username": "newUser",
+        "password": "$2y$10$XWhiYxp8ALfEB5AlcoPVAu8b80dXIAGo4Juo.4yFbyc.ANVB9H8MK"
     }
 ]

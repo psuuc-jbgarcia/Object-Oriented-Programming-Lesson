@@ -14,10 +14,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Add new user
-    $users[] = [
-        "username" => $username,
-        "password" => password_hash($password, PASSWORD_DEFAULT) // secure hash
-    ];
+        $users[] = [
+            "username" => $username,
+            "password" => password_hash($password, PASSWORD_DEFAULT) // secure hash
+        ];
 
     // Save back to JSON
     file_put_contents("users.json", json_encode($users, JSON_PRETTY_PRINT));
