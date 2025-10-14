@@ -1,60 +1,88 @@
-<?php
-// Abstract class
-abstract class Course {
-    protected $title;
-    protected $instructor;
+<?php 
 
-    public function __construct($title, $instructor) {
-        $this->title = $title;
-        $this->instructor = $instructor;
-    }
+// get
+class Student {
+    private $name;
 
-    // Abstract method (no body)
-    abstract public function enrollStudent($studentName);
-
-    // Concrete method (with body)
-    public function courseDetails() {
-        echo "Course Title: {$this->title} | Instructor: {$this->instructor}\n";
-    }
+public function __set($property,$value){
+    //creating 
+    $this->$property=$value;
+}
+public function __get($property){
+    return $this->$property;
+}
 }
 
-// Subclass for ProgrammingCourse
-class ProgrammingCourse extends Course {
-    private $language;
+$s=new Student();
+$s->name="Jerico \n";
+$s->nickname="echo";// dagdag na property
+echo $s->name;
+echo $s->nickname;
 
-    public function __construct($title, $instructor, $language) {
-        parent::__construct($title, $instructor);
-        $this->language = $language;
+// to string
+class Person {
+    public function __toString(){
+        return "I am a Person";
     }
 
-    public function enrollStudent($studentName) {
-        echo "Student {$studentName} enrolled in Programming Course ({$this->language}).\n\n";
+}
+$p=new Person();
+echo $p;
+
+// invoke
+
+class Greet {
+    public function __invoke($name){
+        echo "Hello $name";
     }
 }
+$hi=new Greet();
+$hi("Jerico");
 
-// Subclass for DesignCourse
-class DesignCourse extends Course {
-    private $software;
+//call and call static
 
-    public function __construct($title, $instructor, $software) {
-        parent::__construct($title, $instructor);
-        $this->software = $software;
+Class Demo {
+    public function __call ($method,$args){
+        echo "Method: $method does not exits \n";
     }
-
-    public function enrollStudent($studentName) {
-        echo "Student {$studentName} enrolled in Design Course ({$this->software}).\n\n";
+     static     public function __callStatic ($method,$args){
+        echo "Static Method: $method does not exits \n";
     }
 }
+$s=new Demo();
+$s->run();
 
-// --- Main Program ---
-$studentName = readline("Enter student name: ");
+Demo::run();
 
-$progCourse = new ProgrammingCourse("OOP with Java", "Prof. Santos", "PHP");
-$designCourse = new DesignCourse("UI/UX Fundamentals", "Ms. Dela Cruz", "Figma");
+class Calculator {
+    public function __call($method,$args){
+        if($method=="add"){
 
-$progCourse->courseDetails();
-$progCourse->enrollStudent($studentName);
-
-$designCourse->courseDetails();
-$designCourse->enrollStudent($studentName);
+            if(count($args)==2){
+                echo "Sum of two numbers is :". $args[0] + $args[1]. "\n";
+            }
+            else if(count($args)==3){
+                 echo "Sum of three numbers is :". $args[0] + $args[1] + $args[2];
+            }
+            else{
+                echo "Invalid Number of arguments";
+            }
+        }
+        else{
+            echo "Method not exist";
+        }
+    }
+}
+$c=new Calculator();
+$c->add(4,8);
+$c->add(1,2,6);
+ class Car{
+    public $brand= "Toyota";
+    public function __clone(){
+        $this->brand="Copied".$this->brand;
+    }
+ }
+ $c1=new Car();
+ $c2 =clone $c1;
+ echo $c2->brand;
 ?>
